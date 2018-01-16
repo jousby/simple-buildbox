@@ -1,8 +1,8 @@
+# Inheriting from this alpine-glibc image as glibc is required by java. If not installing java
+# you can inherit from the official alpine base image. 
 FROM frolvlad/alpine-glibc:alpine-3.7
 
 LABEL maintainer="James Ousby <jousby@gmail.com>"
-
-ENV SDKMAN_DIR=/opt/sdkman
 
 # The below is using Sdkman (http://sdkman.io) to manage the installation of jvm related build tools. 
 # The version numbers listed here are sdkman sdk version tags.  Unfortunately to get a list of valid tags to
@@ -10,6 +10,8 @@ ENV SDKMAN_DIR=/opt/sdkman
 # TODO Once this image is published on dockerhub, update with command to use this image to get
 # latest tags. 
 # The following page lists other possible tools you can install (http://sdkman.io/sdks.html).
+ENV SDKMAN_DIR=/opt/sdkman
+
 ENV JAVA_VERSION=8u152-zulu
 ENV GRADLE_VERSION=4.4.1
 ENV MAVEN_VERSION=3.5.2
