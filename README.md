@@ -1,5 +1,7 @@
 ## Simple Buildbox 
 
+[![Build Status](https://travis-ci.org/jousby/simple-buildbox.svg?branch=master)](https://travis-ci.org/jousby/simple-buildbox)
+
 A docker image that makes it easy to package up your build toolchains and in particular, JVM build tools.
 
 The initial use case for creating this image was for use as a custom build image in AWS CodeBuild. By default AWS CodeBuild provides you with several Ubuntu based images that have either Docker OR Java OR Node etc installed. However if you have a build that requires both Docker and Java you are out of luck. AWS CodeBuild provides the option to specify your own custom docker images for this purpose.
