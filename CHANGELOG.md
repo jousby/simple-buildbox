@@ -1,6 +1,7 @@
-# CHANGELOG
 
-## TAGS: 1.0.0, latest (Created: 16 JAN 2018)
+## 1.0.0 (Created: 16 Jan 2018)
+
+Initial release.
 
 * Apline Linux=3.7.0
 * Linux Kernel=4.9.60-linuxkit-auf
