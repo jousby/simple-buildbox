@@ -5,7 +5,7 @@
 
 A docker image that makes it easy to package up your build toolchains and in particular, JVM build tools.
 
-The initial use case for creating this image was for use as a custom build image in AWS CodeBuild. By default AWS CodeBuild provides you with several [Ubuntu based images](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html) that should cover a large number of usecases. However if you are an earlier/later version of specific tools or tools that aren't in the base images then you provice your own Linux based build image.
+The initial use case for creating this image was for use as a custom build image in AWS CodeBuild. By default AWS CodeBuild provides you with several [Ubuntu based images](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html) that should cover a large number of usecases. However if you are after an earlier/later version of specific tools or tools that aren't in the base images then you can use this project to build  your own build image.
 
 While AWS CodeBuild was the initial driver for creating this image there is nothing that would stop this from being a general purpose image for development teams to package up a golden source / reference toolchain stack for building their applications (both on their local machines and in a CI tool like Jenkins).
 

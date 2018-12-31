@@ -1,6 +1,6 @@
 # Inheriting from this alpine-glibc image as glibc is required by java. If not installing java
 # you can inherit from the official alpine base image. 
-FROM frolvlad/alpine-glibc:alpine-3.7
+FROM frolvlad/alpine-glibc:alpine-3.8
 
 LABEL maintainer="James Ousby <jousby@gmail.com>"
 
@@ -12,10 +12,10 @@ LABEL maintainer="James Ousby <jousby@gmail.com>"
 # The following page lists other possible tools you can install (http://sdkman.io/sdks.html).
 ENV SDKMAN_DIR=/opt/sdkman
 
-ENV JAVA_VERSION=8u152-zulu
-ENV GRADLE_VERSION=4.4.1
-ENV MAVEN_VERSION=3.5.2
-ENV SBT_VERSION=1.1.0
+ENV JAVA_VERSION=8.0.192-zulu
+ENV GRADLE_VERSION=5.0
+ENV MAVEN_VERSION=3.6.0
+ENV SBT_VERSION=1.2.8 
 
 # Install required packages for docker, python, aws-cli and sdkman
 # Configure docker to start on boot
